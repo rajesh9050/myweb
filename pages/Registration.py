@@ -5,6 +5,15 @@
 
 import streamlit as st
 
+st.set_page_config(
+    page_title="Registration Form",
+    page_icon="🧊",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
+st.sidebar.header("Registration Page")
+
+
 st.title( "Registration Form" )
 with st.form( "form" ):
     name = st.text_input( "Enter your Name : " )
