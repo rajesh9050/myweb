@@ -1,12 +1,16 @@
 import streamlit as st
+from PIL import Image
+
 st.set_page_config(
     page_title="Rajesh Chouhan",
     page_icon="🧊",
     layout="wide",
     initial_sidebar_state="expanded",
 )
+
 st.sidebar.header("Home Page")
 st.title("Rajesh Chouhan")
-st.image("/home/rajesh/PycharmProjects/myweb/myphoto.webp", caption= "Rajesh Chouhan", width= 225)
+image = Image.open('myphoto.webp')
+st.image(image,caption="Rajesh Chouhan", width=225)
 st.markdown("To know more click on about page")
 
