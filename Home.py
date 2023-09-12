@@ -1,11 +1,12 @@
 import streamlit as st
 st.set_page_config(
-    page_title="Ex-stream-ly Cool App",
+    page_title="Rajesh Chouhan",
     page_icon="🧊",
     layout="wide",
     initial_sidebar_state="expanded",
 )
 st.sidebar.header("Home Page")
-st.title("Welcome to My Website")
-st.markdown("This website is at initial stage, We will improve it further")
+st.title("Rajesh Chouhan")
+st.image("/home/rajesh/PycharmProjects/myweb/myphoto.webp", caption= "Rajesh Chouhan", width= 225)
+st.markdown("To know more click on about page")
 
