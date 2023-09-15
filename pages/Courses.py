@@ -8,6 +8,15 @@ st.set_page_config(
 )
 st.sidebar.header("Course Offered")
 st.title("Courses")
-components.html("<html><body><ul><li>Python</li><li>JAVA</li></ul></body></html>")
+st.markdown("Python")
+st.markdown("JAVA")
+
+choice = st.sidebar.selectbox("Courses", ["Python", "JAVA"])
+if choice == "Python":
+    st.subheader("Python")
+elif choice == "JAVA":
+    st.subheader("Java")
+else:
+    st.subheader("Select Course from Side Bar")
 
 
