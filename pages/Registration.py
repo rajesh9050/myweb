@@ -14,13 +14,13 @@ st.set_page_config(
 st.sidebar.header("Registration Page")
 
 
-st.title( "Registration Form" )
-with st.form( "form" ):
-    name = st.text_input( "Enter your Name : " )
-    gender = st.selectbox( "Gender", [ 'Male', 'Female', 'Others' ] )
+st.title("Registration Form")
+with st.form("form"):
+    name = st.text_input("Enter your Name : ")
+    gender = st.selectbox("Gender", ['Male', 'Female', 'Others'])
     age = st.text_input("What is your age : ")
-    hobby = st.selectbox("Hobbies",['Programming', 'Singing', 'Dancing', 'Reading', 'Writing', 'Reel Making', 'Outgoing'])
-    button = st.form_submit_button( "Done" )
+    hobby = st.selectbox("Hobbies", ['Programming', 'Singing', 'Dancing', 'Reading', 'Writing', 'Reel Making', 'Outgoing'])
+    button = st.form_submit_button("Done")
 
-if button :
+if button:
     st.markdown("Name: {}, Gender: {}, Age {}, Hobby {}".format(name, gender, age, hobby))
