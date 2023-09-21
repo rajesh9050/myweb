@@ -7,7 +7,7 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
 )
-
+# set sidebar values
 st.sidebar.header("Home Page")
 st.title("Rajesh Chouhan")
 image = Image.open('myphoto.webp')
